@@ -193,6 +193,10 @@ select {
   font-size: var(--fs-900);
 }
 
+.lh-200{
+  line-height: var(--lh-200);
+}
+
 .lh-300{
   line-height: var(--lh-300);
 }
@@ -246,6 +250,7 @@ nav{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 87vh;
   padding: 0 5.125rem 0 5.125rem;
+  margin-bottom: 2rem;
 }
 
 .item-landing{
@@ -376,7 +381,7 @@ nav{
   display: grid;
   padding: 0 5.125rem 0 5.125rem;
   grid-template-columns: 1fr;
-  grid-template-rows: 30vh 70vh;
+  grid-template-rows: 30vh 95vh;
 }
 
 .top{
@@ -395,11 +400,6 @@ nav{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
   gap: 30px;
-}
-
-.card{
-  background-color: #5AACA8;
-
 }
 
 .card-item{
@@ -443,6 +443,62 @@ nav{
   top: 0.625rem;
   left: 0.313rem;
 }
+
+/* info frame */
+.info-frame{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: .9rem 1rem;
+}
+
+.rate-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate-div > :last-child > div {
+  display: flex;
+  gap: 3px;
+  padding: 0.1rem 0.4rem 0.1rem;
+  background-color: var(--clr-primary-400);
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.sales{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 1rem;
+}
+
+.prices{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dashboard{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-flex{
+  display: flex;
+  gap: 2px;
+}
+
+.card-button{
+  padding: 0.625rem 1.25rem;
+  border: 1px solid var(--clr-accent-400);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 50em) {
   .nav-link{
     display: none;
@@ -467,7 +523,7 @@ nav{
 
   .container-row{
     display: grid;
-    padding: 0 5.125rem 0 5.125rem;
+    padding: 4rem 4.125rem;
     grid-template-columns: 1fr;
     grid-template-rows: 30vh 250vh;
     gap: 50px;
